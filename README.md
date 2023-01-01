@@ -1,4 +1,4 @@
-![Use image](./rick-rothenberg-A1rJl69TsZw-unsplash.jpg) ## MIXED MESSAGES
+![Use image](./images/rick-rothenberg-A1rJl69TsZw-unsplash.jpg) ## MIXED MESSAGES
 =====
 `Project Manager: İbrahim Koçak`
 
