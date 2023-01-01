@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="myscript.js"></script>
+  <script type='text/javascript' src="myscript.js"></script>
   <title>Mixed Messages</title>
 </head>
 <body>
@@ -13,33 +14,33 @@
   <h1>MIXED MESSAGES</h1>
   <div class="main">
     <div class="container">
-      <p>Select two images below that describe your current mood best </p>
+      <h3>Select two images below that describe your current mood best </h3>
       <ul class="options">
-        <li><a href="#"><img src="/images/cactus.jpg" alt="first choice"></a></li>
-        <li><a href="#"><img src="/images/clouds.jpg" alt="second choice"></a></li>
-        <li><a href="#"><img src="/images/desert.jpg" alt="third choice"></a></li>
-        <li><a href="#"><img src="/images/leaves.jpg" alt="fourth choice"></a></li>
-        <li><a href="#"><img src="/images/mountains.jpg" alt="fifth choice"></a></li>
-        <li><a href="#"><img src="/images/water.jpg" alt="sixth choice"></a></li>
+        <li><a href="#"><img onclick="resim(this)" src="/images/cactus.jpg" id="resim" alt="first choice"></a></li>
+        <li><a href="#"><img onclick="resim(this)" src="/images/clouds.jpg" alt="second choice"></a></li>
+        <li><a href="#"><img onclick="resim(this)" src="/images/desert.jpg" alt="third choice"></a></li>
+        <li><a href="#"><img onclick="resim(this)" src="/images/leaves.jpg" alt="fourth choice"></a></li>
+        <li><a href="#"><img onclick="resim(this)" src="/images/mountains.jpg" alt="fifth choice"></a></li>
+        <li><a href="#"><img onclick="resim(this)" src="/images/water.jpg" alt="sixth choice"></a></li>
       </ul>
     </div>
   
     <div class="button">
-      <button onclick="bas()">Advice</button>
+      <button type="button" onclick="bas()">Advice</button>
+    </div>
+
+    <div class="reset">
+      <button type="button" onclick="geriAl()">Reset</button>
     </div>
   
     <div class="answer">
       <p>Proverb from history...</p>
       <div class="proverb">
-        <p>Merhaba</p>
+        <p id="proverb">Merhaba</p>
       </div>
       <p>Belongs to:</p>
       <div class="author">
         <p id="teller"></p>
-      </div>
-      <p>Autobiography</p>
-      <div class="autobiography">
-        <p class="description"></p>
       </div>
     </div>
   </div>

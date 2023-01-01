@@ -9,6 +9,7 @@ body {
   font-size: 16px;
   text-align: center;
   margin: auto;
+  background-color: whitesmoke;
 }
 
 .main {
@@ -20,13 +21,20 @@ body {
 .container {
   margin: auto;
   padding: auto;
-  border: 1px dashed gray;
+  /*border: 1px dashed gray;*/
 }
 
-.container p {
-  font-size: 1.5rem;
-  margin: 2% auto;
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
 }
+
+.container h3 {
+  font-size: 1.5rem;
+  margin: 1% auto;
+  font-weight: 300;
+}
+
 .options {
   margin: 1%;
   padding: 1%;
@@ -35,17 +43,23 @@ body {
   align-content: space-around;
   justify-content: space-around;
   list-style: none;
-  border: 1px dashed gray;
-  background-color: honeydew;
+  /*border: 1px dashed gray;*/
+  background-color: lightsteelblue;
+  border-radius: 5px;
 }
 
 .options img {
-  width: minmax(200px, 250px);
-  height: minmax(100px, 150px);
+  height: auto;
+  border-radius: 3px;
 }
 
-.options li > a:hover {
+.options img:hover {
   opacity: 0.75;
+  border: 0.5px solid red;
+}
+
+.options img:active {
+  opacity: 0.5;
 }
 
 .button button {
@@ -53,22 +67,44 @@ body {
   width: 200px;
   height: 100px;
   border-radius: 5px;
-  border: 2px solid gray;
+  /*border: 2px solid gray;*/
   background-color: gold;
   font-size: 2.5rem;
   font-weight: 700;
   cursor: pointer;
   color: black;
+  box-shadow: 0px 3px gray;
 }
 
 .button button:hover {
   opacity: 0.85;
   background-color:darkgoldenrod;
+  box-shadow: 0px 3px gray;
+}
+
+.reset button {
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  border-radius: 3px;
+  /*border: 2px solid gray;*/
+  background-color: gold;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: black;
+  box-shadow: 0px 3px gray;
+}
+
+.reset button:hover {
+  opacity: 0.85;
+  background-color:darkgoldenrod;
+  box-shadow: 0px 3px gray;
 }
 
 .answer {
   padding: 1%;
-  border: 1px dashed red;
+  /*border: 1px dashed red;*/
 }
 
 .answer > p:first-child {
@@ -79,25 +115,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed black;
+  /*border: 1px dashed black;*/
   font-size: 3rem;
   min-height: 50px;
   text-shadow: 1px 1px black;
+  color: lightslategrey;
 }
 
 .author {
   height: 50px;
-  border: 1px dashed blue;
+  /*border: 1px dashed blue;*/
   min-height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.autobiography {
-  height: 75px;
-  border: 1px dashed blue;
-  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
