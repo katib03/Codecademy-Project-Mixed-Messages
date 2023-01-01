@@ -2,4 +2,4 @@
 =====
 `Project Manager: İbrahim Koçak`
 
-A advice teller program. 
+if you are looking for advice regarding your mood you may choose two images and find an advice right away. 

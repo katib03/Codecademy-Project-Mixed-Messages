@@ -14,7 +14,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  align-content: center;
 }
 
 .container {
@@ -41,9 +41,12 @@ body {
 
 .options li {
   margin: 5px;
-  min-width: 300px;
-  min-height: 200px;
   text-align: center;
+}
+
+.options img {
+  width: minmax(200px, 250px);
+  height: minmax(100px, 150px);
 }
 
 .options li > a:hover {
@@ -82,14 +85,18 @@ body {
   margin: 2px auto;
   border: 1px dashed black;
   font-size: 3rem;
+  min-height: 75px;
+  text-shadow: 1px 1px black;
 }
 
 .author {
-  height: 100px;
+  height: 75px;
   border: 1px dashed blue;
+  min-height: 75px;
 }
 
 .autobiography {
   height: 100px;
   border: 1px dashed blue;
+  min-height: 150px;
 }
